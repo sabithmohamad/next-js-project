@@ -8,13 +8,13 @@ xmlns="http://www.w3.org/2000/svg"> <path d="M0 0L201 12H0V0Z" fill="#FFDC60" />
 
 const contents = {
   shapes: [
-    'mission-shape-5.1.png',
+    /*'mission-shape-5.1.png',
     'mission-shape-5.6.png',
-    'mission-shape-5.3.png',
+    'mission-shape-5.3.png',*/
   ],
   tabs: [
     { active: true, id: 'mission', title: 'Our Mission' },
-    { id: 'vision', title: 'Our Mission' },
+    { id: 'vision', title: 'Our Vision' },
     { id: 'value', title: 'Our Value' },
   ],
   tab_contents: [
@@ -40,7 +40,8 @@ const contents = {
       text_2: <> We aim for excellence in all aspects of their business to provide the best possible counsel and services. Furthermore, they value lifelong learning, always increasing their expertise and staying current on changing educational trends in order to better serve their pupils.</>
     },
   ],
-  img:'/assets/img/mission/collage.png'
+  /*img:'/assets/img/mission/collage.png'*/
+  
 }
 
 const { shapes, tabs, tab_contents,img } = contents;

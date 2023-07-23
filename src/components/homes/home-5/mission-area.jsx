@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { HighlightThree } from '../../../svg';
 
 const SvgHighlight = () => (<svg width="201" height="12" viewBox="0 0 201 12" fill="none" 
@@ -26,7 +27,7 @@ const contents = {
     },
     {
       id: 'vision',
-      title: <>Developing <span className="tp-section-highlight"> Tomorrow's <HighlightThree /> </span>
+      title: <>Developing <span className="tp-section-highlight">Tomorrows<HighlightThree /> </span>
         Global Leaders</>,
       text_1: <>LGR Study Abroad sees a future in which students become global leaders with a profound awareness of varied cultures <br /> global views, and a desire to make a positive difference in a globalised society.</>,
       text_2: <> Our aim is to develop the next generation of leaders capable of addressing global issues and making the world a better place.</>
@@ -35,7 +36,7 @@ const contents = {
       id: 'value',
       title: <>Empathy <span className="tp-section-highlight"> Excellence
         <HighlightThree /> </span> and Lifelong Learning</>,
-      text_1: <>LGR Study Abroad's strategy and service delivery are guided by key beliefs <br /> They prioritise empathy, understanding students' individual needs and objectives, and giving personalised help.</>,
+      text_1: <>LGR Study Abroads strategy and service delivery are guided by key beliefs <br /> They prioritise empathy, understanding students individual needs and objectives, and giving personalised help.</>,
       text_2: <> We aim for excellence in all aspects of their business to provide the best possible counsel and services. Furthermore, they value lifelong learning, always increasing their expertise and staying current on changing educational trends in order to better serve their pupils.</>
     },
   ],
@@ -49,8 +50,8 @@ const MissionArea = () => {
     <div className="tp-mission-area pt-130 p-relative">
       {shapes.map((s, i) => (
         <div key={i} className={`bp-mission-shape-${i+1} d-none d-lg-block`}>
-          <img src={`/assets/img/mission/${s}`} alt=""/>
-        </div>
+        <Image src={`/assets/img/mission/${s}`} alt="" />
+      </div>
       ))}
       <div className="container">
         <div className="row">
@@ -80,11 +81,14 @@ const MissionArea = () => {
               })}
             </div>
           </div>
-          <div className="col-xl-6 col-lg-5 col-md-12 wow tpfadeRight" data-wow-duration=".5s" data-wow-delay=".7s">
-            <div className="tp-mission-img">
-              <img src={img} alt=""/>
-            </div>
-          </div>
+          
+
+<div className="col-xl-6 col-lg-5 col-md-12 wow tpfadeRight" data-wow-duration=".5s" data-wow-delay=".7s">
+  <div className="tp-mission-img">
+    <Image src={img} alt="Description" />
+  </div>
+</div>
+
         </div>
       </div>
     </div>

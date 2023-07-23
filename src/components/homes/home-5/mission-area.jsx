@@ -83,12 +83,14 @@ const MissionArea = () => {
             </div>
           </div>
           
-
+             {/*
 <div className="col-xl-6 col-lg-5 col-md-12 wow tpfadeRight" data-wow-duration=".5s" data-wow-delay=".7s">
-  <div className="tp-mission-img">
-    <Image src={img} alt="" />
-  </div>
-</div>
+              <div className="tp-mission-img">
+               <Image src={img} alt="" />
+              </div>
+            </div>
+            */} 
+            
 
         </div>
       </div>
